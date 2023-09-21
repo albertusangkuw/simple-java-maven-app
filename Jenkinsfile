@@ -7,8 +7,10 @@ pipeline {
     }
     stages {
         stage('Comment'){
-            println "Submission dengan Java Apps dengan Dicoding"
-            println "Albertus Septian Angkuw"
+            steps {
+                println "Submission dengan Java Apps dengan Dicoding"
+                println "Albertus Septian Angkuw"
+            }
         }
         stage('Build') {
             steps {

@@ -6,8 +6,10 @@ pipeline {
         }
     }
     stages {
-        println "Submission dengan Java Apps dengan Dicoding"
-        println "Albertus Septian Angkuw"
+        stage('Comment'){
+            println "Submission dengan Java Apps dengan Dicoding"
+            println "Albertus Septian Angkuw"
+        }
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'

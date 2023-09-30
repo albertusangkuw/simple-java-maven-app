@@ -95,7 +95,7 @@ pipeline {
                             // Hapus container app yang lawas
                             sshCommand remote: remote, command: 'docker rm simple-java-maven'
                             // Run Container yang baru
-                            sshCommand remote: remote, command: "docker run --name=simple-java-maven -d  albertushub/simple-java-maven:$$VERSION"
+                            sshCommand remote: remote, command: "docker run --name=simple-java-maven -d  albertushub/simple-java-maven:$VERSION"
                             
                         }
                     }

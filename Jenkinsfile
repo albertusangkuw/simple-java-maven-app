@@ -2,8 +2,8 @@
 // Albertus Septian Angkuw 
 
 def getArtifactName(){
-    def NAME = sh(script: 'mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"', returnStdout: true)
-    def VERSION = sh(script: 'mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"', returnStdout: true)
+    def NAME = sh(script: 'mvn help:evaluate -Dexpression=project.name | grep "^[^\\[]"', returnStdout: true)
+    def VERSION = sh(script: 'mvn help:evaluate -Dexpression=project.version | grep "^[^\\[]"', returnStdout: true)
     return [NAME , VERSION]
 }
 

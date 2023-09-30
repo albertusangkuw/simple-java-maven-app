@@ -1,0 +1,8 @@
+# Submission Dicoding - Proyek Membangun CI/CD Pipeline dengan Jenkins
+# Albertus Septian Angkuw 
+
+# Menggunakan OpenJDK 11 sebagai JDK
+FROM adoptopenjdk/openjdk11:armv7l-ubuntu-jre11u-2023-09-28-23-10-beta-nightly
+# Memindahkan hasil build aplikasi ke root web server
+COPY target/${app-name-gen} /usr/local/lib/simple-java-maven.jar
+CMD ["java","-jar","/usr/local/lib/simple-java-maven.jar"]

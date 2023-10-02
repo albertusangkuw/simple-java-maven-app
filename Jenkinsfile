@@ -79,7 +79,7 @@ pipeline {
                     // Label Remote Host
                     remote.name = "ec2-aws"
                     // IP Host
-                    remote.host = "3.0.97.118"
+                    remote.host = "54.255.187.105"
                     remote.allowAnyHosts = true
                     // Menggunakan SSH Pipeline Steps Plugins untuk trigger docker pull pada remote server
                     withCredentials([sshUserPrivateKey(credentialsId: 'a85c8863-8a79-4370-8d84-3812897c24ea', keyFileVariable: 'identity', passphraseVariable: '', usernameVariable: 'user')]) {
